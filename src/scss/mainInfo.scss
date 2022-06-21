@@ -1,0 +1,57 @@
+.mainInfo {
+  display: flex;
+  padding: 24px 0;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: 768px) {
+    padding: 32px 0;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  @media (min-width: 1366px) {
+    padding: 20px 0 50px;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 18px;
+    font-weight: normal;
+    letter-spacing: 0.2px;
+
+    @media (min-width: 768px) {
+      min-width: 312px;
+      max-width: 500px;
+      line-height: 20px;
+      margin-right: 48px;
+    }
+
+    @media (min-width: 1366px) {
+      min-width: 490px;
+      max-width: 700px;
+    }
+
+    &_hidden {
+      display: none;
+
+      @media (min-width: 1366px) {
+        display: block;
+      }
+    }
+  }
+
+  &__cpsLogo {
+    width: 100%;
+    border-radius: 6px;
+
+    @media (min-width: 768px) {
+      max-width: 400px;
+    }
+
+    @media (min-width: 1366px) {
+      max-width: 530px;
+    }
+  }
+}

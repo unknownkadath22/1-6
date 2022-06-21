@@ -1,0 +1,19 @@
+.separator {
+  order: 1;
+  width: 2px;
+  height: 32px;
+  border-radius: 1px;
+  background-color: $separator-bg-color;
+
+  @media (min-width: 768px) {
+    order: 0;
+  }
+
+  &_hidden {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+}

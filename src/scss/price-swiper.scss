@@ -1,0 +1,149 @@
+.price-swiper {
+  margin-bottom: 14px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 1366px) {
+    margin-bottom: 10px;
+  }
+}
+
+.price-wrapper {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 42px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title-price-slide {
+    display: none;
+
+    @media (min-width: 768px) {
+      opacity: 0.72;
+      display: flex;
+      padding: 16px;
+      letter-spacing: normal;
+      color: $menuBtn-focus-color;
+      background-color: transparent;
+    }
+  }
+
+  &__price-slide {
+    width: 260px;
+    display: flex;
+    height: 200px;
+    padding: 16px;
+    border-radius: 6px;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $mobileMenu-bg-color;
+
+    @media (min-width: 768px) {
+      width: 720px;
+      height: auto;
+      border-radius: 0;
+      align-items: center;
+      flex-direction: row;
+      justify-content: flex-start;
+      border-bottom: 1px solid $separator-bg-color;
+    }
+
+    @media (min-width: 1120px) {
+      width: 1072px;
+    }
+
+    @media (min-width: 1366px) {
+      width: 940px;
+    }
+
+    @media (min-width: 1440px) {
+      width: 1030px;
+    }
+
+    h3 {
+      opacity: 0.72;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 16px;
+      margin-bottom: 4px;
+      color: $menuBtn-focus-color;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 18px;
+      letter-spacing: 0.2px;
+    }
+
+    &:last-child {
+      @media (min-width: 768px) {
+        border: none;
+      }
+    }
+  }
+
+  &__repair-services {
+    @media (min-width: 768px) {
+      width: 372px;
+    }
+
+    @media (min-width: 1120px) {
+      width: 570px;
+    }
+
+    @media (min-width: 1366px) {
+      width: 450px;
+    }
+
+    @media (min-width: 1440px) {
+      width: 500px;
+    }
+  }
+
+  &__repair-price {
+    @media (min-width: 768px) {
+      width: 110px;
+    }
+
+    @media (min-width: 1120px) {
+      width: 220px;
+    }
+
+    @media (min-width: 1366px) {
+      width: 200px;
+    }
+
+    @media (min-width: 1440px) {
+      width: 230px;
+    }
+  }
+
+  &__repair-time {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    @media (min-width: 768px) {
+      width: 220px;
+      align-items: center;
+    }
+
+    @media (min-width: 1120px) {
+      width: 300px;
+    }
+
+    @media (min-width: 1440px) {
+      width: 300px;
+    }
+  }
+}

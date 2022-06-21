@@ -1,0 +1,13 @@
+.support {
+  width: 152px;
+  display: flex;
+  justify-content: space-between;
+
+  &_hidden {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+}

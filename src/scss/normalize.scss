@@ -1,0 +1,67 @@
+html {
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  outline-color: rgba(241, 104, 161, 0.5);
+
+  &::before {
+    box-sizing: inherit;
+  }
+
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+button:active,
+button:focus {
+  border: none;
+  outline-style: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: $menuBtn-color;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: $input-color;
+}
+
+input::-moz-input-placeholder,
+textarea::-moz-input-placeholder {
+  color: $input-color;
+}

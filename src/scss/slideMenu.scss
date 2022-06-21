@@ -1,0 +1,20 @@
+.slideMenu {
+  overflow: auto;
+
+  @media (min-width: 1366px) {
+    overflow: visible;
+  }
+
+  &__wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-width: 1160px;
+    justify-content: space-between;
+
+    @media (min-width: 1366px) {
+      flex-wrap: wrap;
+      min-width: auto;
+    }
+  }
+}

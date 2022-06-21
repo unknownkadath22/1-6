@@ -1,0 +1,124 @@
+.mobileMenu {
+	top: 0;
+	bottom: 0;
+  margin: 0;
+  z-index: 4;
+  display: flex;
+  padding: 0 16px;
+  min-width: 320px;
+  position: absolute;
+  flex-direction: column;
+  background-color: $mobileMenu-bg-color;
+
+  @media (min-width: 360px) {
+    width: 360px;
+    padding: 0 24px;
+  }
+
+  @media (min-width: 1366px) {
+    width: 320px;
+    display: block;
+    position: static;
+  }
+
+  &__header {
+    padding: 19px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__crossAndLogo {
+    display: flex;
+    min-width: 154px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    height: 608px;
+    display: flex;
+    padding-top: 6px;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+
+      img {
+        margin-left: -16px;
+        padding-right: 12px;
+
+        @media (min-width: 360px) {
+          margin-left: -24px;
+          padding-right: 20px;
+        }
+      }
+
+      .hidden {
+        display: none;
+      }
+    }
+
+    .mobileMenu__footer {
+      height: 220px;
+    }
+  }
+
+  &__email {
+    padding: 0;
+    color: #1b1c21;
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 1.14rem;
+    margin: 16px 0 12px;
+    letter-spacing: -0.2px;
+  }
+
+  &__numphone {
+    padding: 0;
+    color: #1b1c21;
+    font-weight: bold;
+    font-size: 1.71rem;
+    margin: 12px 0 8px;
+  }
+
+  &__languages {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-bottom: 32px;
+    list-style-type: none;
+    justify-content: flex-start;
+
+    @media (min-width: 1366px) {
+      margin-top: 40px;
+    }
+  }
+
+  &_shadow {
+    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
+
+    @media (min-width: 1366px) {
+      box-shadow: none;
+    }
+  }
+
+  &_hidden {
+    display: none;
+
+    @media (min-width: 1366px) {
+      display: block;
+    }
+  }
+}
+
+.menu-blur {
+	top: 0;
+	bottom: 0;
+  width: 320px;
+  z-index: -10;
+  position: absolute;
+}

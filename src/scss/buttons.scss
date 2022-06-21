@@ -1,0 +1,211 @@
+.circleBtn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 1.8s;
+  background-color: $btn-bg-color;
+  transition-property: background-color;
+
+  &:hover {
+    background-color: #6b0505;
+  }
+
+  &_hidden {
+    @media (min-width: 1366px) {
+      display: none;
+    }
+  }
+}
+
+.menuBtn {
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 1.14rem;
+  color: $menuBtn-color;
+  letter-spacing: -0.2px;
+  transition-duration: 0.4s;
+  transition-property: filter color;
+  background-color: $mobileMenu-bg-color;
+
+  &:hover {
+    filter: sepia(0.8) opacity(0.6);
+  }
+
+  &:active,
+  &:focus {
+    color: $menuBtn-focus-color;
+  }
+}
+
+.btnLang {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  user-select: none;
+  line-height: 24px;
+  margin-right: 7px;
+  font-size: 1.14rem;
+  color: $menuBtn-color;
+  letter-spacing: -0.2px;
+  transition-duration: 0.4s;
+  transition-property: color;
+  background-color: $mobileMenu-bg-color;
+
+  &:active,
+  &:focus {
+    color: $menuBtn-focus-color;
+  }
+}
+
+.slideButton {
+  height: 40px;
+  border: none;
+  font-weight: 500;
+  padding: 0 16.5px;
+  line-height: 24px;
+  font-size: 1.14rem;
+  letter-spacing: -0.2px;
+  transition-duration: 0.4s;
+  color: $menuBtn-focus-color;
+	border: 2px solid transparent;
+  background-color: $main-bg-color;
+  transition-property: background-color border;
+
+  @media (min-width: 768px) {
+    padding: 0 17px;
+  }
+
+  @media (min-width: 1366px) {
+    padding: 0 21.9px;
+  }
+
+  &:hover {
+    border: 2px solid $btn-border-color;
+  }
+
+  &:active,
+  &:focus {
+    border: 2px solid $btn-border-color;
+    background-color: $mobileMenu-bg-color;
+  }
+}
+
+.readMore {
+  padding: 0;
+  border: none;
+  font-weight: 500;
+  line-height: 24px;
+  align-self: start;
+  font-size: 1.14rem;
+  padding-left: 20px;
+  color: $menuBtn-color;
+  letter-spacing: -0.2px;
+  margin: 16px 0 16px 8px;
+  background: $main-bg-color url(../img/expand.svg) no-repeat 0 6px;
+
+  &_hidden {
+    @media (min-width: 1366px) {
+      display: none;
+    }
+  }
+
+  &_rotate {
+    background: url(../img/expand2.svg) no-repeat 0 6px;
+  }
+}
+
+.swiper-button {
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+  transition-duration: 0.3s;
+  border: 2px solid $btn-bg-color;
+  border-radius: 50%;
+  transition-property: background-position border;
+  background: url(../img/dropdown.svg) no-repeat;
+  background-position: 50% 50%;
+
+  &:hover {
+    border: 2px solid $btn-bg-color-hover;
+  }
+
+  &:focus {
+    border: 2px solid $btn-bg-color;
+    border-radius: 50%;
+    background-position: 15% 50%;
+  }
+
+  &:active {
+    border: 2px solid $btn-bg-color;
+    border-radius: 50%;
+    background-position: 90% 50%;
+  }
+}
+
+.swiper__readMore_hidden {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.price-button {
+  width: 119px;
+  height: 32px;
+  border: none;
+  text-align: left;
+  line-height: 24px;
+  padding-left: 12px;
+  font-size: 0.86rem;
+  border-radius: 16px;
+  letter-spacing: -0.15px;
+  transition-duration: 0.3s;
+  color: $mobileMenu-bg-color;
+  transition-property: background-position;
+  background: $btn-bg-color url(../img/arrow.svg) no-repeat;
+  background-position: 80% 50%;
+
+  &:hover {
+    background-image: url(../img/arrow.svg),
+      linear-gradient(to right, $btn-bg-color-hover 5%, $btn-bg-color, $btn-bg-color-hover 95%);
+  }
+
+  &:focus {
+    background-position: 65% 50%;
+  }
+
+  &:active {
+    background-position: 95% 50%;
+  }
+}
+
+.button-form {
+  width: 136px;
+  height: 32px;
+  text-align: left;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 4px 15px;
+  font-size: 0.86rem;
+  border-radius: 16px;
+  letter-spacing: -0.15px;
+  transition-duration: 0.3s;
+  color: $mobileMenu-bg-color;
+  transition-property: background-position;
+  background: $btn-bg-color url(../img/arrow.svg) no-repeat;
+  background-position: 80% 50%;
+
+  &:focus {
+    background-position: 65% 50%;
+  }
+
+  &:active {
+    background-position: 95% 50%;
+  }
+}

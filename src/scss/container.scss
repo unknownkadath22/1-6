@@ -1,0 +1,17 @@
+.container {
+  display: block;
+	position: relative;
+  font-family: $main-fonts;
+
+  @media (min-width: 1366px) {
+    display: flex;
+  }
+}
+
+.blur {
+	top: 0;
+	bottom: 0;
+  width: 100%;
+  z-index: -10;
+  position: absolute;
+}

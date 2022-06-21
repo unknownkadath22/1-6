@@ -1,0 +1,47 @@
+.footer {
+  background-color: $main-bg-color;
+  border-top: 1px solid $border-color;
+
+  @media (min-width: 768px) {
+    display: flex;
+    padding-bottom: 25px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  p {
+    opacity: 0.72;
+    flex-basis: 33%;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 32px;
+    line-height: 16px;
+    text-align: center;
+    color: $menuBtn-focus-color;
+
+    &:first-child {
+      @media (min-width: 768px) {
+        text-align: left;
+        margin-left: 24px;
+      }
+
+      @media (min-width: 1366px) {
+        margin-left: 32px;
+      }
+    }
+
+    &:last-child {
+      padding-bottom: 19px;
+
+      @media (min-width: 768px) {
+        padding-bottom: 0;
+        text-align: right;
+        margin-right: 24px;
+      }
+
+      @media (min-width: 1366px) {
+        margin-right: 32px;
+      }
+    }
+  }
+}
